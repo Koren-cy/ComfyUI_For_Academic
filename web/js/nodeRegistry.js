@@ -16,7 +16,11 @@ export class NodeRegistry {
     }
 
     async loadNodes(prefix) {
-        const nodeFiles = ['ShowDOM', 'ShowMarkdown', 'ShowWebpage', 'MarkdownEditor', 'ShowImage'];
+        const nodeFiles = ['ShowDOM', 'ShowMarkdown', 'ShowWebpage', 'MarkdownEditor', 'ShowImage', 
+                          'LinePlot', 'ScatterPlot', 'BarPlot', 'Histogram', 'PieChart',
+                          'Heatmap', 'ContourPlot', 'QuiverPlot', 'StreamPlot',
+                          'BoxPlot', 'ViolinPlot', 'DensityPlot', 'QQPlot',
+                          'PolarPlot', 'RadarChart', 'TernaryPlot', 'ParallelCoordinates', 'SankeyDiagram'];
         
         for (const nodeFile of nodeFiles) {
             const nodeClass = `${prefix}_${nodeFile}`;

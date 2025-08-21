@@ -15,6 +15,26 @@ from .src.import_nodes import NODE_DISPLAY_NAME_MAPPINGS
 
 WEB_DIRECTORY = "./web"
 
+
+
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei', 'SimSun', 'Arial Unicode MS']  # 优先使用的中文字体列表
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+plt.rcParams['font.family'] = 'sans-serif'  # 使用无衬线字体
+
+
+import os
+import matplotlib as mpl
+
+if os.name == 'nt':  # Windows系统
+    mpl.rc('font', family='Microsoft YaHei')
+else:  # 类Unix系统
+    mpl.rc('font', family='Arial Unicode MS')
+mpl.rcParams['axes.unicode_minus'] = False 
+
+
+
 import json
 import server
 import traceback
