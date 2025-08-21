@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class ParallelCoordinates:
     '''
     平行坐标图
-    使用Matplotlib绘制平行坐标图，支持DataFrame数据输入，用于高维数据可视化
+    使用Matplotlib绘制平行坐标图，用于高维数据可视化
     '''
     
     @classmethod

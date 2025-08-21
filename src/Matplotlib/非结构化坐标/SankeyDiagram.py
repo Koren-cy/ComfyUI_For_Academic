@@ -13,7 +13,7 @@ matplotlib.use('Agg')
 class SankeyDiagram:
     '''
     桑基图
-    使用Matplotlib绘制桑基图，支持DataFrame数据输入，用于流量数据可视化
+    使用Matplotlib绘制桑基图，用于流量数据可视化
     '''
     
     @classmethod

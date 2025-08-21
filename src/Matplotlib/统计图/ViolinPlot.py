@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class ViolinPlot:
     '''
     小提琴图
-    使用Matplotlib绘制小提琴图，支持DataFrame数据输入，显示数据密度分布
+    使用Matplotlib绘制小提琴图，显示数据密度分布
     '''
     
     @classmethod

@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class DensityPlot:
     '''
     密度图
-    使用Matplotlib绘制密度图，支持DataFrame数据输入，显示概率密度函数
+    使用Matplotlib绘制密度图，显示概率密度函数
     '''
     
     @classmethod

@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class PieChart:
     '''
     饼图
-    使用Matplotlib绘制饼图，支持DataFrame数据输入
+    使用Matplotlib绘制饼图
     '''
     
     @classmethod

@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class QQPlot:
     '''
     QQ图
-    使用Matplotlib绘制QQ图，支持DataFrame数据输入，用于正态性检验和分布比较
+    使用Matplotlib绘制QQ图，用于正态性检验和分布比较
     '''
     
     @classmethod

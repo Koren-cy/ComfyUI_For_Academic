@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class PolarPlot:
     '''
     极坐标图
-    使用Matplotlib绘制极坐标图，支持DataFrame数据输入
+    使用Matplotlib绘制极坐标图
     '''
     
     @classmethod

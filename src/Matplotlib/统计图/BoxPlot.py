@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class BoxPlot:
     '''
     箱线图
-    使用Matplotlib绘制箱线图，支持DataFrame数据输入，显示数据分布和异常值
+    使用Matplotlib绘制箱线图，显示数据分布和异常值
     '''
     
     @classmethod

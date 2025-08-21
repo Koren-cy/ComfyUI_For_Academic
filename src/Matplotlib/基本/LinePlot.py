@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class LinePlot:
     '''
     线图
-    使用Matplotlib绘制线图，支持DataFrame数据输入
+    使用Matplotlib绘制线图
     '''
     
     @classmethod

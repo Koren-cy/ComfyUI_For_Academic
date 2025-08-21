@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class Histogram:
     '''
     直方图
-    使用Matplotlib绘制直方图，支持DataFrame数据输入
+    使用Matplotlib绘制直方图
     '''
     
     @classmethod

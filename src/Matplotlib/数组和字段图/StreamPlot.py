@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class StreamPlot:
     '''
     流线图
-    使用Matplotlib绘制流线图，支持DataFrame数据输入
+    使用Matplotlib绘制流线图
     '''
     
     @classmethod

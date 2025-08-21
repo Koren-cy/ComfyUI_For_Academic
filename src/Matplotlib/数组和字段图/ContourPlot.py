@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class ContourPlot:
     '''
     等高线图
-    使用Matplotlib绘制等高线图，支持DataFrame数据输入
+    使用Matplotlib绘制等高线图
     '''
     
     @classmethod

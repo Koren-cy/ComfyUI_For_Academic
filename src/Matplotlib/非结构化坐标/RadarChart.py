@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class RadarChart:
     '''
     雷达图
-    使用Matplotlib绘制雷达图，支持DataFrame数据输入
+    使用Matplotlib绘制雷达图
     '''
     
     @classmethod

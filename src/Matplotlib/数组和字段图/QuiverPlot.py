@@ -10,8 +10,8 @@ matplotlib.use('Agg')
 
 class QuiverPlot:
     '''
-    箭头图（向量场图）
-    使用Matplotlib绘制箭头图，支持DataFrame数据输入
+    向量场图
+    使用Matplotlib绘制箭头图
     '''
     
     @classmethod

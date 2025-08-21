@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 class ScatterPlot:
     '''
     散点图
-    使用Matplotlib绘制散点图，支持DataFrame数据输入
+    使用Matplotlib绘制散点图
     '''
     
     @classmethod

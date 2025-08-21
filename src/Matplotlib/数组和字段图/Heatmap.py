@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class Heatmap:
     '''
     热力图
-    使用Matplotlib绘制热力图，支持DataFrame数据输入
+    使用Matplotlib绘制热力图
     '''
     
     @classmethod

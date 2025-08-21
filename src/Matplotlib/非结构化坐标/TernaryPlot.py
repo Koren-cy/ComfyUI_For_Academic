@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 class TernaryPlot:
     '''
     三角图
-    使用Matplotlib绘制三角图，支持DataFrame数据输入，用于显示三元组数据
+    使用Matplotlib绘制三角图，用于显示三元组数据
     '''
     
     @classmethod
