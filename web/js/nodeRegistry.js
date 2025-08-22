@@ -1,7 +1,8 @@
 export class NodeRegistry {
     constructor(prefix) {
+        this.prefix = prefix;
         this.nodes = new Map();
-        this.loadNodes(prefix);
+        this.loadNodes();
     }
 
     register(nodeClass, handler) {
@@ -15,17 +16,22 @@ export class NodeRegistry {
         }
     }
 
-    async loadNodes(prefix) {
-        const nodeFiles = ['ShowDOM', 'ShowMarkdown', 'ShowWebpage', 'MarkdownEditor', 'ShowImage', 
-                          'LinePlot', 'ScatterPlot', 'BarPlot', 'Histogram', 'PieChart',
-                          'Heatmap', 'ContourPlot', 'QuiverPlot', 'StreamPlot',
-                          'BoxPlot', 'ViolinPlot', 'DensityPlot', 'QQPlot',
-                          'PolarPlot', 'RadarChart', 'TernaryPlot', 'ParallelCoordinates', 'SankeyDiagram'];
+    async loadNodes() {
+        await this.loadNodeFrom('可视化', 
+            ['ShowDOM', 'ShowMarkdown', 'ShowWebpage', 'MarkdownEditor', 'ShowImage']);
+        await this.loadNodeFrom('Matplotlib', 
+            ['LinePlot', 'ScatterPlot', 'BarPlot', 'Histogram', 'PieChart',
+            'Heatmap', 'ContourPlot', 'QuiverPlot', 'StreamPlot',
+            'BoxPlot', 'ViolinPlot', 'DensityPlot', 'QQPlot',
+            'PolarPlot', 'RadarChart', 'TernaryPlot', 'ParallelCoordinates', 'SankeyDiagram']);
         
+    }
+
+    async loadNodeFrom(path,nodeFiles){
         for (const nodeFile of nodeFiles) {
-            const nodeClass = `${prefix}_${nodeFile}`;
+            const nodeClass = `${this.prefix}_${nodeFile}`;
             try {
-                const module = await import(`./nodes/${nodeFile}.js`);
+                const module = await import(`./${path}/${nodeFile}.js`);
                 if (module.default) {
                     this.register(nodeClass, module.default);
                 }
